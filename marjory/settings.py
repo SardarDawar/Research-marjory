@@ -114,10 +114,15 @@ WSGI_APPLICATION = 'marjory.wsgi.application'
 
 # this uses sqlite (to switch to mysql, comment this out and use the above 'DATABASES' variable, and provide the required credentials)
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+   'default': {
+       'ENGINE': 'django.db.backends.mysql',
+       'NAME': 'defaultdb',
+       'USER': 'doadmin',
+       'PASSWORD':'t04xkosfto9bvpjs',
+       'HOST':'marjorydatabase-do-user-8358100-0.b.db.ondigitalocean.com',
+       'PORT':'25060'
+
+ }
 }
 
 
